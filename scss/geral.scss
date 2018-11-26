@@ -255,7 +255,7 @@ a:active {
         border-radius: 5px;
         box-shadow: 0 3px 6px lighten($cor01, 30);
         margin: 10px;
-
+        position: relative;
         a {
             display: block;
             font-size: 1.3rem;
@@ -276,11 +276,23 @@ a:active {
 
         &:hover {
             background-color: $cor03;
-
+           
             a {
                 color: $cor04;
                 padding-top: 20px;
             }
+        }
+        &::after {
+            bottom: 5px;
+            color: $cor04;
+            content: '\f2c3';
+            font-family: "FontAwesome";
+            font-size: 1rem;
+            display: block;
+            height: 20px;
+            width: 100%;
+            text-align: center;
+            position: absolute;
         }
     }
 }
