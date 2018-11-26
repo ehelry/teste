@@ -514,6 +514,94 @@ a:active {
     }
 }
 
+/*
+## Post ##
+*/
+
+.post {
+    display: grid;
+    grid-template-columns: 64% 30%;
+    grid-gap: 6%;
+    header {
+        padding: 20px 0;
+        .img-autor {
+            border-radius: 50%;
+            display: inline-block;
+            float: left;
+            height: 60px;
+            margin: 5px 20px 5px 0;
+            overflow: hidden;
+            text-align: center;
+            width: 60px;
+
+            img {
+                height: auto;
+                max-width: 60px;
+            }
+        }
+
+        img {
+            border-radius: 5px;
+            object-fit: cover;
+            width: 100%;
+        }
+
+        span {
+            background-color: $cor02;
+            border-radius: 5px;
+            color: $cor04;
+            font-size: 0.9rem;
+            font-weight: 300;
+            display: table;
+            margin: 10px 0;
+            padding: 5px 10px;
+            text-transform: uppercase;
+        }
+
+        h2 {
+            color: $cor01;
+            font-size: 2.5rem;
+            line-height: 2.2rem;
+            margin-bottom: 25px;
+
+            a {
+                color: $cor01;
+            }
+        }
+
+        p {
+            border-right: 1px solid $cor01;
+            color: $cor01;
+            display: inline-block;
+            float: left;
+            font-size: 0.8rem;
+            font-weight: 300;
+            line-height: 1.2rem;
+            margin: 10px 0;
+            padding: 6px 10px 6px 0;
+
+            a {
+                color: $cor01;
+                text-transform: uppercase;
+                &:hover,
+                &:active,
+                &:focus {
+                    color: $cor03;
+                }
+            }
+        }
+    }
+    .img { margin-bottom: 30px; }
+    .content {
+        p {
+            color: $cor01;
+            font-size: 1rem;
+            line-height: 1.4rem;
+            margin-block-start: 20px;
+        }
+    }
+}
+
 /* 
 ## Footer ## 
 */
@@ -649,7 +737,6 @@ footer {
         display: block;
         margin: 20px auto;
         max-width: 100%;
-        vertical-align: middle;
     }
 
     .cabecalho-topo .nav-menu-principal ul li {
