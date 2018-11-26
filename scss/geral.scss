@@ -282,7 +282,7 @@ a:active {
                 padding-top: 20px;
             }
         }
-        &::after {
+        &:hover::after {
             bottom: 5px;
             color: $cor04;
             content: '\f2c3';
